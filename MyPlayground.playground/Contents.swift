@@ -16,3 +16,25 @@ var workHours: Float = 40.5;
 var ableToWork: Bool = true;
 
 
+let sID: Int = 1001;
+var badgeId: Int = 2991;
+print(sID, badgeId);
+
+badgeId = 3000;
+print(badgeId);
+//sID = 3994; not changeable.
+
+var mArray = ["One"];
+mArray.append("Hello");
+
+print(mArray);
+
+var myDictionary = ["one": 1];
+myDictionary=["two": 2];
+myDictionary=["two":0]
+
+print(myDictionary);
+
+
+
+
