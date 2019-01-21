@@ -145,22 +145,61 @@
 //
 //}
 
-var d3: Int = 3;
-var d5: Int = 5;
-var limit27: Int = 27;
-var i: Int = 1;
-for i in 1...limit27{
+//var d3: Int = 3;
+//var d5: Int = 5;
+//var limit27: Int = 27;
+//var i: Int = 1;
+//for i in 1...limit27{
+//
+//    if(i % d3 == 0 && i % d5 == 0){
+//        print("FizzBuzz \(i)");
+//    } else if i % d5 == 0 {
+//        print("Buzz \(i)");
+//    } else if i % d3 == 0 {
+//        print("Fizz \(i)");
+//    }
+//
+//}
 
-    if(i % d3 == 0 && i % d5 == 0){
-        print("FizzBuzz \(i)");
-    } else if i % d5 == 0 {
-        print("Buzz \(i)");
-    } else if i % d3 == 0 {
-        print("Fizz \(i)");
-    }
-    
+//var toDoList: [String] = ["Learn IOS", "Build Flappy Bird", "Retire in Cancun"];
+//    print(toDoList);
+//var toDoListN: [Int] = [1,2,3];
+//    print(toDoListN);
+//var emptyList: [String] = [String]();
+//    emptyList.append("James");
+//    print(emptyList);
+//var emptyListAlt = Array<String>();
+//    emptyListAlt.append("Hello");
+//    print(emptyListAlt);
 
-    
+//var numList: [Int] = [1,2,3,4,5,6];
+//    print("\(numList[2])");
+//    print("\(numList[0..<4])");
+//    print("\(numList[1...3])");
+//    numList[2] = 19;
+//    print("\(numList)");
+//let popped = numList.remove(at: 0);
+//    print("\(numList)");
+//let poppedLast = numList.removeLast();
+//    print("\(numList)");
+//    numList.insert(25, at: 2);
+//    print("\(numList)");
+//    numList.insert(30, at: 2);
+//    print("\(numList)");
+//    numList.insert(5, at: numList.count);
+//    print("\(numList)");
+//    print("\(numList.count)");
+//    numList.insert(6, at: numList.count);
+//    print("\(numList)");
+
+//var starters: [String] = ["Fisher", "Kobe", "Gasol", "Bynum", "World Peace"];
+//for starter in starters {
+//    print(starter);
+//}
+
+
+var starters: [String] = ["Fisher", "Kobe", "Gasol", "Bynum", "World Peace"];
+for starter in 0..<starters.count {
+    print(starters[starter]);
 }
-
 
