@@ -63,3 +63,20 @@ if classNumber >= 5{
     print("unknown class number")
 }
 
+var jName: String = "James";
+let jState: String = "VA";
+var jId: Int = 101;
+
+if jId >= 100 && jName == "James" {
+    print("\(jName) is a contractor.")
+}
+
+for i in 1...5{
+    print(i);
+}
+
+var i = 1;
+while i < 6{
+    print(i);
+    i = i+1;
+}
