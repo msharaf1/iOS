@@ -160,7 +160,7 @@
 //    }
 //
 //}
-
+//
 //var toDoList: [String] = ["Learn IOS", "Build Flappy Bird", "Retire in Cancun"];
 //    print(toDoList);
 //var toDoListN: [Int] = [1,2,3];
@@ -171,7 +171,7 @@
 //var emptyListAlt = Array<String>();
 //    emptyListAlt.append("Hello");
 //    print(emptyListAlt);
-
+//
 //var numList: [Int] = [1,2,3,4,5,6];
 //    print("\(numList[2])");
 //    print("\(numList[0..<4])");
@@ -191,15 +191,39 @@
 //    print("\(numList.count)");
 //    numList.insert(6, at: numList.count);
 //    print("\(numList)");
-
+//
 //var starters: [String] = ["Fisher", "Kobe", "Gasol", "Bynum", "World Peace"];
 //for starter in starters {
 //    print(starter);
 //}
-
-
-var starters: [String] = ["Fisher", "Kobe", "Gasol", "Bynum", "World Peace"];
-for starter in 0..<starters.count {
-    print(starters[starter]);
-}
-
+//
+//
+//var starters: [String] = ["Fisher", "Kobe", "Gasol", "Bynum", "World Peace"];
+//for starter in 0..<starters.count {
+//    print(starters[starter]);
+//}
+//
+////var myDictList: [String: Int];
+//var myDictList0: [String: Int] = [String: Int]();
+//var myDictList1 = [String: Int](); //uses Swit Infer
+//var myDictList2 = [
+//    "Kobe": 100,
+//    "Lebron": 200,
+//    "Rondo": 300
+//];
+//    print(myDictList2["Lebron"]);
+//var newJer = myDictList2["Kobe"];
+//    print(newJer);
+//
+//myDictList2["Kobe"] = nil;
+//    print(myDictList2);
+//var lebNum = myDictList2.removeValue(forKey: "Lebron");
+//    print(lebNum);
+//
+//for(key, value) in myDictList2{
+//    print("The key is \(key) and the value is value \(value)");
+//}
+//
+//for x in myDictList2 {
+//    print(x);
+//}
