@@ -1,0 +1,36 @@
+//var d3: Int = 3;
+//var d5: Int = 5;
+//var limit27: Int = 27;
+//var i: Int = 1;
+//for i in 1...limit27{
+//
+//    if i % d3 == 0 {
+//        print("Fizz \(i)");
+//    }
+//    if i % d5 == 0 {
+//        print("Buzz \(d5)");
+//    }
+//
+//    if(i % d3 == 0 && i % d5 == 0){
+//        print("FizzBuzz \(i)");
+//    }
+//
+//}
+
+var d3: Int = 3;
+var d5: Int = 5;
+var limit27: Int = 27;
+var i: Int = 1;
+for i in 1...limit27{
+
+    if(i % d3 == 0 && i % d5 == 0){
+        print("FizzBuzz \(i)");
+    } else if i % d5 == 0 {
+        print("Buzz \(i)");
+    } else if i % d3 == 0 {
+        print("Fizz \(i)");
+    }
+    
+
+    
+}

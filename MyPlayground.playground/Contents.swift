@@ -82,17 +82,17 @@
 //}
 
 
-var type: String = "Rectangle";
-var description: String = "A quadrilateral with four right angles";
-var width: Float = 5.0;
-var height: Float = 10.5;
-var area: Double = Double(width) * Double(height);
-height += 1;
-width += 1;
+//var type: String = "Rectangle";
+//var description: String = "A quadrilateral with four right angles";
+//var width: Float = 5.0;
+//var height: Float = 10.5;
+//var area: Double = Double(width) * Double(height);
+//height += 1;
+//width += 1;
 //area = width * height
 // Note how you can "interpolate" variables into Strings using the following syntax
 
-print("The shape is a \(type) or \(description) with an area of \(area)")
+//print("The shape is a \(type) or \(description) with an area of \(area)")
 
 //var h: Float = 0.0;
 //var w: Float = 0.0;
@@ -104,4 +104,63 @@ print("The shape is a \(type) or \(description) with an area of \(area)")
 //
 
     //a + b + c + d;
+//
+//var num255: Int = 255;
+//var i: Int = 1;
+//for i in 1...num255 {
+//    print(i);
+//}
+
+//var d3: Int = 3;
+//var d5: Int = 5;
+//var limit1000: Int = 1000;
+//var i: Int = 1;
+//for i in 1...limit1000{
+//    if i % d3 == 0 {
+//        print(i);
+//    } else if i % d5 == 0 {
+//        print(i);
+//    }
+//    //if i % d5 == 0 {
+////    print(i);
+////}
+//}
+
+//var d3: Int = 3;
+//var d5: Int = 5;
+//var limit27: Int = 27;
+//var i: Int = 1;
+//for i in 1...limit27{
+//
+//    if i % d3 == 0 {
+//        print("Fizz \(i)");
+//    }
+//    if i % d5 == 0 {
+//        print("Buzz \(d5)");
+//    }
+//
+//    if(i % d3 == 0 && i % d5 == 0){
+//        print("FizzBuzz \(i)");
+//    }
+//
+//}
+
+var d3: Int = 3;
+var d5: Int = 5;
+var limit27: Int = 27;
+var i: Int = 1;
+for i in 1...limit27{
+
+    if(i % d3 == 0 && i % d5 == 0){
+        print("FizzBuzz \(i)");
+    } else if i % d5 == 0 {
+        print("Buzz \(i)");
+    } else if i % d3 == 0 {
+        print("Fizz \(i)");
+    }
+    
+
+    
+}
+
 
