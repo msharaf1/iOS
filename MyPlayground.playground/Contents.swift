@@ -229,64 +229,103 @@
 //}
 
 
-func helloWorld(){
-    print("Hello World");
-}
-helloWorld();
+//func helloWorld(){
+//    print("Hello World");
+//}
+//helloWorld();
+//
+//func helloName(name: String){
+//    print("Hello \(name)");
+//}
+//helloName(name: "John");
+//
+//func findArea(height: Int, width: Int){
+//    var area: Int = height * width;
+//    print("The area is \(area) meters");
+//}
+//
+//findArea(height: 20, width: 40);
+//
+//var myInt: Int = 1;
+//
+//func changemyInt(someInt: Int){
+//    var someInt = someInt;
+//    someInt = someInt + 1;
+//    print(someInt);
+//}
+//changemyInt(someInt: myInt);
+//
+//var myInt1: Int = 2;
+//func changeIntOut(someInt: inout Int){
+//    someInt = someInt + 1;
+//    print(someInt);
+//}
+//changeIntOut(someInt: &myInt1);
+//print(myInt1);
+//
+//func sayHello(name: String = "buddy") -> String {
+//    return "hey \(name)";
+//}
+//var greeting: String?
+//greeting = sayHello();
+//print(greeting);
+//
+//func calcArea(w: Int, h: Int) -> Int{
+//    return w * h;
+//}
+//var area = calcArea(w: 10, h: 20);
+//print(area);
+//print(calcArea(w: 30, h: 20))
+//
+//func lookForSomethingInDic(dictionary: [String: Int], forKey key: String) -> Int?{
+//    if let value = dictionary[key]{
+//        return value;
+//    }else {
+//        return nil;
+//    }
+//}
+//var jerseyNumbers = ["Kobe": 24, "Curry": 30];
+//var jerseyNumber = lookForSomethingInDic(dictionary: jerseyNumbers, forKey: "Kobe");
+////print(jerseyNumber);
+//if let numJ = jerseyNumber{
+//    print(numJ);
+//}
+//
+//func findMinOf(arr: [Int]) -> Int?{
+//    if arr.count > 0 {
+//        var min = arr[0]
+//        for num in arr {
+//            if num < min {
+//                min = num
+//            }
+//        }
+//        return min
+//    } else{
+//        return nil
+//    }
+//}
+//
+//print(findMinOf(arr: [1,2,3,4,5]));
+//
 
-func helloName(name: String){
-    print("Hello \(name)");
-}
-helloName(name: "John");
+//func sayHello(){
+//    print("Hello")
+//}
+//sayHello();
+//
+//func sayHello1() -> Void{
+//    print("Hello")
+//}
+//
+//sayHello()
 
-func findArea(height: Int, width: Int){
-    var area: Int = height * width;
-    print("The area is \(area) meters");
-}
-
-findArea(height: 20, width: 40);
-
-var myInt: Int = 1;
-
-func changemyInt(someInt: Int){
-    var someInt = someInt;
-    someInt = someInt + 1;
-    print(someInt);
-}
-changemyInt(someInt: myInt);
-
-var myInt1: Int = 2;
-func changeIntOut(someInt: inout Int){
-    someInt = someInt + 1;
-    print(someInt);
-}
-changeIntOut(someInt: &myInt1);
-print(myInt1);
-
-func sayHello(name: String = "buddy") -> String {
-    return "hey \(name)";
-}
-var greeting: String?
-greeting = sayHello();
-print(greeting);
-
-func calcArea(w: Int, h: Int) -> Int{
-    return w * h;
-}
-var area = calcArea(w: 10, h: 20);
-print(area);
-print(calcArea(w: 30, h: 20))
-
-func lookForSomethingInDic(dictionary: [String: Int], forKey key: String) -> Int?{
-    if let value = dictionary[key]{
-        return value;
-    }else {
-        return nil;
+func buyBicycle(cost: Int) -> (Int) -> String {
+    print("You just paid $\(cost) for your new bike!")
+    func cycle(miles: Int) -> String {
+        return "Have a greate ride! See you in \(miles) miles!"
+        
     }
+    return cycle
 }
-var jerseyNumbers = ["Kobe": 24, "Curry": 30];
-var jerseyNumber = lookForSomethingInDic(dictionary: jerseyNumbers, forKey: "Kobe");
-//print(jerseyNumber);
-if let numJ = jerseyNumber{
-    print(numJ);
-}
+print(buyBicycle(cost: 500)(30))
+
