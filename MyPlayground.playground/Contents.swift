@@ -319,13 +319,75 @@
 //
 //sayHello()
 
-func buyBicycle(cost: Int) -> (Int) -> String {
-    print("You just paid $\(cost) for your new bike!")
-    func cycle(miles: Int) -> String {
-        return "Have a greate ride! See you in \(miles) miles!"
-        
+//func buyBicycle(cost: Int) -> (Int) -> String {
+//    print("You just paid $\(cost) for your new bike!")
+//    func cycle(miles: Int) -> String {
+//        return "Have a greate ride! See you in \(miles) miles!"
+//
+//    }
+//    return cycle
+//}
+//print(buyBicycle(cost: 500)(30))
+
+func minMax(arr: [Int]) -> (min: Int, max: Int){
+    var currentMin: Int = arr[0]
+    var currentMax: Int = arr[0]
+    
+    for value in arr[1..<arr.count]{
+        if value < currentMin {
+            currentMin = value
+        } else if value > currentMax {
+            currentMax = value;
+        }
     }
-    return cycle
+    
+    return (currentMin, currentMax)
 }
-print(buyBicycle(cost: 500)(30))
+print(minMax(arr: [12,25,65,-500]))
+
+
+
+//func maxMinAvg(arr: [Int]) -> (Int, Int, Double) {
+//    //if arr.count > 0 {
+//    var sum: Int = 0
+//    var max: Int = arr[0]
+//    var min: Int = arr[0]
+//    var avg: Double = 0.0
+//    var i: Int = 0;
+//    for i in arr {
+//        i;
+////        sum += arr.indexOf(i);
+////        if max > arr[i] {
+////            max = arr[i]
+////        } else if min < arr[i] {
+////            min = arr[i]
+////        }
+//    }
+////    avg = Double(sum/arr.count);
+//    return (max, min, avg)
+//    //}
+//
+//}
+//var result = maxMinAvg(arr: [1,2])
+//print(result)
+
+//func testInt(num: Int) -> Int {
+//    let newNum = num + 250;
+//    return newNum;
+//}
+//let two00 = testInt(num: 200)
+////print (two00)
+//
+//func testArr(arr: [Int]) -> Int {
+//    var val: Int = 0;
+//    for var i in arr {
+////        val += i;
+//        print(arr.index(i, offsetBy: 1))
+//        
+//    }
+//    print(val);
+//    return val;
+//}
+//
+//testArr(arr: [1,2,3,4,5,8])
 
