@@ -129,7 +129,7 @@
 //    var minNum = arr[0]
 //    var maxNum = arr[0]
 //    var sum = 0;
-//    
+//
 //        for num in arr {
 //            sum += num;
 //            if num < minNum {
@@ -145,3 +145,31 @@
 //
 //var minMaxAvg = findMinMaxAvg(arr: [10,10,30])
 //print(minMaxAvg)
+
+func buyBicycle(cost: Int) -> (Int) -> String {
+    print("You just paid $\(cost) for the bike.")
+        func cycle(miles: Int) -> String {
+            return "Have a great ride! See you \(miles) miles."
+        }
+        return cycle;
+}
+print(buyBicycle(cost: 300)(35))
+
+
+func info(input: Int){
+    if input > 100 {
+        print("Entered number is greater than 100.")
+    }else {
+        print("The entered number is less than 100")
+    }
+}
+
+func info(input: [Any]){
+    if input.count > 100 {
+        print("The size of Array is: \(input.count)")
+    }else {
+        print("The size of Array is: \(input.count)")
+    }
+}
+info(input: 150);
+info(input: [1,2,3,4])
