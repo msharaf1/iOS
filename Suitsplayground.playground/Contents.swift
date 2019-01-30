@@ -27,21 +27,23 @@
 //https://learnappmaking.com/random-numbers-swift/
 
 
-func randGen(closeRange: Int) -> Int{
-    var diceRoll = Int.random(in: 1..<closeRange)
-    return diceRoll;
-}
+//func randGen(closeRange: Int) -> Int{
+//    var diceRoll = Int.random(in: 1..<closeRange)
+//    return diceRoll;
+//}
+//
+//randGen(closeRange: 10)
+//
+//func tossCoid(tossInt: Int) -> String {
+//    if randGen(closeRange: tossInt) % 2 == 0{
+//        return "Head"
+//    } else {
+//        return "Tail"
+//    }
+//
+////    return "";
+//}
+//
+//print(tossCoid(tossInt: 10))
 
-randGen(closeRange: 10)
 
-func tossCoid(tossInt: Int) -> String {
-    if randGen(closeRange: tossInt) % 2 == 0{
-        return "Head"
-    } else {
-        return "Tail"
-    }
-
-//    return "";
-}
-
-print(tossCoid(tossInt: 10))
