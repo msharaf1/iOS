@@ -22,3 +22,24 @@ var myRectangle = Rectangle()
 //print(myRectangle.height)
 myRectangle.printDesc()
 print(myRectangle.doubleWidth())
+
+
+struct Rectangle {
+    var width: Int
+    var height: Int
+    var size: String
+
+    init(width: Int, height: Int) {
+        self.width = width
+        self.height = height
+
+        if width + height <= 10 {
+            size = "small"
+        } else {
+            size = "large"
+        }
+    }
+}
+
+let rectangle = Rectangle(width: 400, height: 200)
+print(rectangle.size)
