@@ -1,49 +1,105 @@
-import UIKit
-
-//var str = "Hello, playground"
-
-class Person{
-    var firstName: String;
-    var lastName: String;
-    var salary: Double;
-    var age: Int;
-    
-    init(firstName: String, lastName: String, salary: Double, age: Int) {
-        self.firstName = firstName;
-        self.lastName = lastName;
-        self.salary = salary;
-        self.age = age;
-    }
-    
-    func fullInfo(firstName: String, lastName: String, salary: Double, age: Int){
-        print("Customer Information: \(firstName)  \(lastName)  \(salary)  \(age) ")
-    }
-}
-
-var daiEmp = Person(firstName: "James", lastName: "Brown", salary: 2500.25, age: 33)
-
-print(daiEmp.firstName, daiEmp.lastName , daiEmp.salary , daiEmp.age);
-daiEmp.fullInfo(firstName: "Kim", lastName: "Anderson", salary: 125.00, age: 18)
-
-print(daiEmp.firstName)
-//daiEmp.lastName
-
-struct Account {
-    var accNumber: Int;
-    var accName: String;
-    var accDeposit: Double;
-    var accWithdraw: Double;
-    var accBalance: Double;
-    
-    init(accNumber: Int, accName: String, accDeposit: Double, accWithdraw: Double, accBalance: Double) {
-        self.accName = accName;
-        self.accNumber = accNumber;
-        self.accDeposit = accDeposit;
-        self.accWithdraw = accWithdraw;
-        self.accBalance = accBalance;
-    }
-    
-//    func calcBalance(){
-//        accBalance += accDeposit
+//import UIKit
+//
+////var str = "Hello, playground"
+//
+//class Person{
+//    var firstName: String;
+//    var lastName: String;
+//    var salary: Double;
+//    var age: Int;
+//
+//    init(firstName: String, lastName: String, salary: Double, age: Int) {
+//        self.firstName = firstName;
+//        self.lastName = lastName;
+//        self.salary = salary;
+//        self.age = age;
 //    }
+//
+//    func fullInfo(firstName: String, lastName: String, salary: Double, age: Int){
+//        print("Customer Information: \(firstName)  \(lastName)  \(salary)  \(age) ")
+//    }
+//}
+//
+//var daiEmp = Person(firstName: "James", lastName: "Brown", salary: 2500.25, age: 33)
+//
+//print(daiEmp.firstName, daiEmp.lastName , daiEmp.salary , daiEmp.age);
+//daiEmp.fullInfo(firstName: "Kim", lastName: "Anderson", salary: 125.00, age: 18)
+//
+//print(daiEmp.firstName)
+////daiEmp.lastName
+//
+//struct Account {
+//    var accNumber: Int;
+//    var accName: String;
+//    var accDeposit: Double;
+//    var accWithdraw: Double;
+//    var accBalance: Double;
+//
+//    init(accNumber: Int, accName: String, accDeposit: Double, accWithdraw: Double, accBalance: Double) {
+//        self.accName = accName;
+//        self.accNumber = accNumber;
+//        self.accDeposit = accDeposit;
+//        self.accWithdraw = accWithdraw;
+//        self.accBalance = accBalance;
+//    }
+//
+////    func calcBalance(){
+////        accBalance += accDeposit
+////    }
+//}
+
+
+struct FixedLengthRange {
+    var firstValue: Int
+    let length: Int
 }
+var rangeOfThreeItems = FixedLengthRange(firstValue: 2, length: 6)
+rangeOfThreeItems.firstValue = 99;
+//rangeOfThreeItems.length = 199
+
+print(rangeOfThreeItems)
+
+struct Point{
+    var x = 0.0, y = 0.0;
+}
+struct Size {
+    var width = 0.0, height = 0.0
+}
+struct Rect {
+    var origin = Point()
+    var size = Size()
+    var center: Point{
+        get{
+            let centerX = origin.x + (size.width / 2)
+            let centerY = origin.y + (size.height / 2)
+            return Point(x: centerX, y: centerY)
+        }
+        set(newCenter){
+            origin.x = newCenter.x - (size.width / 2)
+            origin.y = newCenter.y - (size.height / 2)
+        }
+    }
+}
+
+var square = Rect(origin: Point(x:0.0, y:0.9), size: Size(width: 10.0, height: 10.0))
+
+let initialSqaureCenter = square.center;
+square.center = Point(x: 15.0, y: 15.0)
+print("square.origin is now at (\(square.origin.x), \(square.origin.y))")
+
+struct AlternativeRect {
+    var origin = Point()
+    var size = Size()
+    var center: Point {
+        get {
+            let centerX = origin.x + (size.width / 2)
+            let centerY = origin.y + (size.height / 2)
+            return Point(x: centerX, y: centerY)
+        }
+        set {
+            origin.x = newValue.x - (size.width / 2)
+            origin.y = newValue.y - (size.height / 2)
+        }
+    }
+}
+
